@@ -43,6 +43,21 @@ public class CustomList extends ArrayAdapter<City> {
         int index = this.cities.indexOf(c);
         return index != -1;
     }
+
+    /**
+     * This returns whether or not a list has a city
+     * @param c
+     * The city to delete
+     * @throws
+     * IllegalArgumentException
+     */
+    public void deleteCity(City c) throws IllegalArgumentException {
+        /*int index = this.cities.indexOf(c);
+        if(index == -1) {
+            throw new IllegalArgumentException("City not in list");
+        }
+        this.cities.remove(index); */
+    }
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
