@@ -28,7 +28,7 @@ public class CustomList extends ArrayAdapter<City> {
     public int getCount() {
         return this.cities.size();
     }
-    public void addCity(City city) {
+    public void add(City city) {
         cities.add(city);
         return;
     }
@@ -40,9 +40,8 @@ public class CustomList extends ArrayAdapter<City> {
      * Return true if the list has the city, false otherwise
      */
     public Boolean hasCity(City c) {
-        /*int index = this.cities.indexOf(c);
-        return index != -1;*/
-        return false;
+        int index = this.cities.indexOf(c);
+        return index != -1;
     }
     @NonNull
     @Override
