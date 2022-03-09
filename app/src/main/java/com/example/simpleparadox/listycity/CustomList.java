@@ -32,7 +32,18 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
         return;
     }
-
+    /**
+     * This returns whether or not a list has a city
+     * @param c
+     * The city to look for
+     * @return
+     * Return true if the list has the city, false otherwise
+     */
+    public Boolean hasCity(City c) {
+        /*int index = this.cities.indexOf(c);
+        return index != -1;*/
+        return false;
+    }
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
