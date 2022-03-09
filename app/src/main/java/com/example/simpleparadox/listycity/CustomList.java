@@ -26,7 +26,7 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public int getCount() {
-        return this.cities.size();
+        return 0;
     }
     public void add(City city) {
         cities.add(city);
