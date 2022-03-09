@@ -52,11 +52,11 @@ public class CustomList extends ArrayAdapter<City> {
      * IllegalArgumentException
      */
     public void deleteCity(City c) throws IllegalArgumentException {
-        /*int index = this.cities.indexOf(c);
+        int index = this.cities.indexOf(c);
         if(index == -1) {
             throw new IllegalArgumentException("City not in list");
         }
-        this.cities.remove(index); */
+        this.cities.remove(index); 
     }
     @NonNull
     @Override
